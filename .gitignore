@@ -71,6 +71,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Common IntelliJ Platform excludes
+
 # User specific
 **/.idea/**/workspace.xml
 **/.idea/**/tasks.xml
@@ -91,3 +93,17 @@ crashlytics-build.properties
 **/.idea/**/*.iml
 **/.idea/**/contentModel.xml
 **/.idea/**/modules.xml
+
+[Bb]in/
+[Oo]bj/
+_UpgradeReport_Files/
+[Pp]ackages/
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/.idea.MistyVenture/.idea/vcs.xml
+.idea/.idea.MistyVenture/.idea/encodings.xml
+.idea/.idea.MistyVenture/.idea/indexLayout.xml
+.idea/.idea.MistyVenture/.idea/projectSettingsUpdater.xml
+
