@@ -32,3 +32,5 @@ Possuem personalidade traiçoeiras e diligentes, afinal manter um território e 
 - fazer a parte "combate" no floppy pro player destruir o gameobject quando pular na cabeça
 - fazer o floppy machucar o player
 - animação de morte do player/ floppy????
+- fazer o prefab dos espinhos e das moedas?
+- fazer o player morrer e resetar
