@@ -16,7 +16,7 @@ public class MistyMovement : MonoBehaviour
     [SerializeField] private float friction;
     
     // Calculos 
-    private float directionX;
+    public float directionX;
     private Vector2 desiredVelocity;
     public Vector2 velocity;
     private float acceleration;

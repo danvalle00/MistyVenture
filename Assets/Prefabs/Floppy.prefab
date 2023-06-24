@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4189832056687028266}
   - component: {fileID: 1867718879181841190}
   - component: {fileID: 7573837104674675823}
+  - component: {fileID: 6057778970041938595}
+  - component: {fileID: 4822511804747423695}
   m_Layer: 0
   m_Name: Floppy
   m_TagString: Untagged
@@ -180,3 +182,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6057778970041938595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794159946034170921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121ee71de36bb1847856c3d0d3c2921c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floppyVelocity: -1
+--- !u!114 &4822511804747423695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794159946034170921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cffbaca177e672748845774917e4635a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  airLayer:
+    serializedVersion: 2
+    m_Bits: 64

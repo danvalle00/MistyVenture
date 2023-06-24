@@ -5,33 +5,33 @@ using UnityEngine;
 
 public class MistyAnimation : MonoBehaviour
 {
-    Rigidbody2D mistyRigid;
+    private MistyMovement movementScript;
     Animator mistyAnimator;
-    MistyMovement runScript;
     MistyJump jumpScript;
-    private float runningSpeed;
-    [SerializeField] private float maxSpeed = 8.0f;
     private bool playerGrounded;
     private static readonly int Running = Animator.StringToHash("Running");
     private static readonly int Landed = Animator.StringToHash("Landed");
     private static readonly int Jump = Animator.StringToHash("Jump");
+    
+    
+    
 
     private void Start()
     {
-        runScript = GetComponent<MistyMovement>();
+        
         jumpScript = GetComponent<MistyJump>();
         mistyAnimator = GetComponent<Animator>();
+        movementScript = GetComponent<MistyMovement>();
     }
         
 
     private void Update()
     {
-        runningSpeed = Mathf.Clamp(Mathf.Abs(runScript.velocity.x), 0, maxSpeed);
-        mistyAnimator.SetFloat(Running, runningSpeed);
-        
-        
+        HorizontalAnimation();
         checkLanded();
     }
+        
+        
 
     void checkLanded()
     {
@@ -51,5 +51,10 @@ public class MistyAnimation : MonoBehaviour
         mistyAnimator.ResetTrigger(Landed);
         mistyAnimator.SetTrigger(Jump);
         
+    }
+
+    private void HorizontalAnimation()
+    {
+        mistyAnimator.SetBool(Running, Mathf.Abs(movementScript.directionX) > 0f);
     }
 }
