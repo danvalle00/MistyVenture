@@ -27,4 +27,8 @@ Suas ações são andar para frente e para trás e bater.
 Seu poder consiste na organização do clã em patrulhar o território e manter suas informações secretas.
 Possuem personalidade traiçoeiras e diligentes, afinal manter um território e saquear todos que adentram neles sem falhas é uma demonstração de força.
 
-## (daniel) TODO: arrumar os numeros do movement/pulo etc 
+## daniel TODO's:
+- arrumar os numeros do movement/pulo etc do Misty  
+- fazer a parte "combate" no floppy pro player destruir o gameobject quando pular na cabeça
+- fazer o floppy machucar o player
+- animação de morte do player/ floppy????
