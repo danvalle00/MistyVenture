@@ -17,9 +17,10 @@ GameObject:
   - component: {fileID: 8332420573883861981}
   - component: {fileID: 8420112192981487614}
   - component: {fileID: 7025196556320027421}
-  m_Layer: 0
+  - component: {fileID: 6640788359217121502}
+  m_Layer: 3
   m_Name: Misty
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,10 +115,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &1758405566424011185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -253,3 +254,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc10ad26083de94fba222664edf9f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6640788359217121502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876738144810648666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4be3aa06eaee7468a083ca90099a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flagTransform: {fileID: 0}

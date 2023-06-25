@@ -9,9 +9,8 @@ public class FloppyMovement : MonoBehaviour
     private Animator floppyAnimator;
     private FloppyDetections floppyChecks;
     [SerializeField] private float floppyVelocity = -1.0f;
-    private static readonly int Running = Animator.StringToHash("Running");
-    
-    
+
+
 
 
     void Start()
