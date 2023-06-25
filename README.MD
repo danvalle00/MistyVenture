@@ -28,7 +28,7 @@ Seu poder consiste na organização do clã em patrulhar o território e manter 
 Possuem personalidade traiçoeiras e diligentes, afinal manter um território e saquear todos que adentram neles sem falhas é uma demonstração de força.
 
 ## daniel TODO's:
-- arrumar os numeros do movement/pulo etc do Misty  
+- arrumar os numeros do movement/pulo etc do Misty e a velocidade do floppy 
 - fazer a parte "combate" no floppy pro player destruir o gameobject quando pular na cabeça
 - fazer o floppy machucar o player
 - fazer os coletaveis e começar a ui
