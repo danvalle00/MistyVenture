@@ -31,6 +31,7 @@ Possuem personalidade traiçoeiras e diligentes, afinal manter um território e 
 - arrumar os numeros do movement/pulo etc do Misty  
 - fazer a parte "combate" no floppy pro player destruir o gameobject quando pular na cabeça
 - fazer o floppy machucar o player
-- animação de morte do player/ floppy????
-- fazer o prefab dos espinhos e das moedas?
-- fazer o player morrer e resetar
+- fazer os coletaveis e começar a ui
+- copper coin = 1pt; silver = 3; gold =5;
+- cada sec aumenta 1pt; sei la
+
