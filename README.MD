@@ -29,9 +29,10 @@ Possuem personalidade traiçoeiras e diligentes, afinal manter um território e 
 
 ## daniel TODO's:
 - arrumar os numeros do movement/pulo etc do Misty e a velocidade do floppy 
+- fazer a camera seguir o player
 - fazer a parte "combate" no floppy pro player destruir o gameobject quando pular na cabeça
 - fazer o floppy machucar o player
 - fazer os coletaveis e começar a ui
 - copper coin = 1pt; silver = 3; gold =5;
-- cada sec aumenta 1pt; sei la
+
 
