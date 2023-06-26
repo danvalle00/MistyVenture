@@ -32,7 +32,13 @@ Possuem personalidade traiçoeiras e diligentes, afinal manter um território e 
 - fazer a camera seguir o player
 - fazer a parte "combate" no floppy pro player destruir o gameobject quando pular na cabeça
 - fazer o floppy machucar o player
-- fazer os coletaveis e começar a ui
-- copper coin = 1pt; silver = 3; gold =5;
+- fazer os coletaveis e começar a ui?
+
+
+## O que está pronto:
+- Movimentação do player
+- Checkpoint e Respawn
+- Movimentação do Floppy
+- Prefabs dos Assets
 
 
