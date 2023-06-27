@@ -27,12 +27,15 @@ Suas ações são andar para frente e para trás e bater.
 Seu poder consiste na organização do clã em patrulhar o território e manter suas informações secretas.
 Possuem personalidade traiçoeiras e diligentes, afinal manter um território e saquear todos que adentram neles sem falhas é uma demonstração de força.
 
-## daniel TODO's:
-- arrumar os numeros do movement/pulo etc do Misty e a velocidade do floppy 
-- fazer o floppy machucar o player
-- fazer os coletaveis e começar a ui?
+## TODO'S
+- Ui
+- As coins coletáveis
+- Level Design das Cenas 
 
-
+## daniel todo's 
+- floppy fazer o player respawnar
+- fazer um prefab pra mudar de cena pra ser transição de fase
+- tem mais alguma coisa que esqueci
 
 ## O que está pronto:
 - Movimentação do player
