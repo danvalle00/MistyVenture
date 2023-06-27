@@ -1,6 +1,6 @@
-using System;
 using UnityEngine;
-using UnityEngine.Android;
+
+
 
 public class MistyJump : MonoBehaviour
 {
@@ -30,6 +30,7 @@ public class MistyJump : MonoBehaviour
     private float gravityMultiplier = 1.0f;
     
     // estado atual
+    private float doubleJumpCounter;
     private bool canJumpAgain;
     private bool desiredJump;
     private float jumpBufferCounter;
@@ -65,7 +66,7 @@ public class MistyJump : MonoBehaviour
   
     void Update()
     {
-        setPhysics();
+        
         onJump();
         onGround = ground.GetOnGround();
         if (jumpBuffer > 0)
@@ -98,7 +99,7 @@ public class MistyJump : MonoBehaviour
         
      private void setPhysics()
      {
-         // formula de queda livre que fofo h = g * t² / 2 
+         // formula de queda livre h = g * t² / 2 
          // como é movimento horizontal de descida por isso do -2;
          Vector2 newGravity = new Vector2(0, -2f * jumpHeight / (jumpApexTime * jumpApexTime));
          mistyRigid.gravityScale = (newGravity.y / Physics2D.gravity.y) * gravityMultiplier;
@@ -108,21 +109,26 @@ public class MistyJump : MonoBehaviour
 
      private void FixedUpdate()
      { 
-         
+         setPhysics();
          velocity = mistyRigid.velocity;
          if (desiredJump)
          {
+             if (maxAirJump > 0)
+             {
+                 doubleJumpCounter += 1;
+             }
              Jump();
              mistyRigid.velocity = velocity;
              return;
          }
          calculateGravity();
+             
      }
 
 
      private void calculateGravity() // implorando por refatoração
      {
-         if (mistyRigid.velocity.y > 0.01f) // subindo
+         if (mistyRigid.velocity.y > 0) // subindo
          {
              if (onGround)
              {
@@ -141,7 +147,7 @@ public class MistyJump : MonoBehaviour
             }
          }
                     
-         else if (mistyRigid.velocity.y < -0.01f) // descendo
+         else if (mistyRigid.velocity.y < 0) // descendo
          {
              gravityMultiplier = onGround ? defaultGravity : downGravityMultiplier;
          }
@@ -157,11 +163,11 @@ public class MistyJump : MonoBehaviour
 
          mistyRigid.velocity = new Vector2(velocity.x, Mathf.Clamp(velocity.y, -fallSpeedLimit, 100));
                     
+     }
                     
                  
          
 
-     }
 
      private void Jump()
      {
@@ -173,27 +179,36 @@ public class MistyJump : MonoBehaviour
 
              canJumpAgain = (maxAirJump == 1 && canJumpAgain == false);
              // torriceli = v² = 2gh , como o movimento é pra baixo, -2f
-             jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * mistyRigid.gravityScale * jumpHeight);
+             if (doubleJumpCounter > 1 && !onGround)
+             {
+                 jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * mistyRigid.gravityScale * jumpHeight) / 2;    
+             }
+             else
+             {
+                 jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * mistyRigid.gravityScale * jumpHeight);
+             }
 
              if (velocity.y > 0f)
              {
-                 jumpSpeed = Mathf.Abs(jumpSpeed - mistyRigid.velocity.y);
+                 jumpSpeed = Mathf.Max(jumpSpeed - velocity.y, 0);
              }
              else if (velocity.y < 0f)
              {
                  jumpSpeed += Mathf.Abs(mistyRigid.velocity.y);
              }
-
+                 
              velocity.y += jumpSpeed;
              currentlyJumping = true;
              animationScript.JumpAnimation();
          }
 
-
          if (jumpBuffer == 0)
          {
              desiredJump = false;
          }
+
+
+
          
      }
 

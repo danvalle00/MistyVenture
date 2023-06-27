@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4822511804747423695}
   m_Layer: 0
   m_Name: Floppy
-  m_TagString: Untagged
+  m_TagString: Floppy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8873278352664776811
 SpriteRenderer:
@@ -114,8 +114,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &1867718879181841190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -208,8 +208,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  airLayer:
     serializedVersion: 2
     m_Bits: 64
