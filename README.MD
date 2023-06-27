@@ -29,10 +29,9 @@ Possuem personalidade traiçoeiras e diligentes, afinal manter um território e 
 
 ## daniel TODO's:
 - arrumar os numeros do movement/pulo etc do Misty e a velocidade do floppy 
-- fazer a camera seguir o player
-- fazer a parte "combate" no floppy pro player destruir o gameobject quando pular na cabeça
 - fazer o floppy machucar o player
 - fazer os coletaveis e começar a ui?
+
 
 
 ## O que está pronto:
@@ -40,5 +39,8 @@ Possuem personalidade traiçoeiras e diligentes, afinal manter um território e 
 - Checkpoint e Respawn
 - Movimentação do Floppy
 - Prefabs dos Assets
+- CameraFollow
+- Floppy Goomba style combat
+ 
 
 
