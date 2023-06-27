@@ -29,7 +29,7 @@ Possuem personalidade traiçoeiras e diligentes, afinal manter um território e 
 
 ## TODO'S
 - Ui
-- As coins coletáveis
+- As coins coletáveis (Fazer um prefab pra cada tipo de moeda)
 - Level Design das Cenas 
 
 ## daniel todo's 
