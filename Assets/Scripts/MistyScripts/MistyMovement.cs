@@ -56,6 +56,8 @@ public class MistyMovement : MonoBehaviour
 
     }
 
+  
+
     private void FixedUpdate() // para calculos de fisica na unity
     {
         onGround = ground.GetOnGround();

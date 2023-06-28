@@ -8,6 +8,8 @@ public class SpikeKill : MonoBehaviour
     public GameObject misty;
     public Transform respawnPoint;
     private MistyHurting hurtScript;
+    private ScoreManager scoreManager;
+
     
     
     // Start is called before the first frame update
@@ -23,6 +25,7 @@ public class SpikeKill : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             misty.transform.position = respawnPoint.position;
+            Debug.Log("Misty morreu");
         }
     }
 }
