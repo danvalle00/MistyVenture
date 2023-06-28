@@ -8,6 +8,9 @@ TagManager:
   - Flag
   - Floppy
   - Coins
+  - BronzeCoin
+  - GoldCoin
+  - SilverCoin
   layers:
   - Default
   - TransparentFX
