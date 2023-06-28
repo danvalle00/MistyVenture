@@ -9,6 +9,8 @@ public class MistyHurting : MonoBehaviour
     public Transform flagTransform;
     private bool hurting;
     private bool flagRespawn = false;
+
+  
     
     private void Start()
     {
@@ -38,6 +40,8 @@ public class MistyHurting : MonoBehaviour
         // layer do espinho
         if (other.gameObject.layer == 7)
         {
+            ScoreManager.instance.ResetScore();
+
             transform.position = flagRespawn ? checkpointFlag : mistyInitialPoint;
         }
             
