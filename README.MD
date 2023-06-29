@@ -26,24 +26,3 @@ Os vilões são todo o clã de Floppys, como eles são conhecidos por seus adver
 Suas ações são andar para frente e para trás e bater.
 Seu poder consiste na organização do clã em patrulhar o território e manter suas informações secretas.
 Possuem personalidade traiçoeiras e diligentes, afinal manter um território e saquear todos que adentram neles sem falhas é uma demonstração de força.
-
-## TODO'S
-- Ui
-- As coins coletáveis (Fazer um prefab pra cada tipo de moeda)
-- Level Design das Cenas 
-
-## daniel todo's 
-- floppy fazer o player respawnar
-- fazer um prefab pra mudar de cena pra ser transição de fase
-- tem mais alguma coisa que esqueci
-
-## O que está pronto:
-- Movimentação do player
-- Checkpoint e Respawn
-- Movimentação do Floppy
-- Prefabs dos Assets
-- CameraFollow
-- Floppy Goomba style combat
- 
-
-
