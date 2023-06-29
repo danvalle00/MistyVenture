@@ -1,11 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikeKill : MonoBehaviour
+public class deathAreaScript : MonoBehaviour
 {
-    public GameObject misty;
+     public GameObject misty;
     public Transform respawnPoint;
     private MistyHurting hurtScript;
     private ScoreManager scoreManager;
