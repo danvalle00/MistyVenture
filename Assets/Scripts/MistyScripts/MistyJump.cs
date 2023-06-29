@@ -178,15 +178,10 @@ public class MistyJump : MonoBehaviour
              coyoteTimeCounter = 0;
 
              canJumpAgain = (maxAirJump == 1 && canJumpAgain == false);
-             // torriceli = v² = 2gh , como o movimento é pra baixo, -2f
-             if (doubleJumpCounter > 1 && !onGround)
-             {
-                 jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * mistyRigid.gravityScale * jumpHeight) / 2;    
-             }
-             else
-             {
-                 jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * mistyRigid.gravityScale * jumpHeight);
-             }
+             // torriceli = v² = 2gh , como o movimento é pra baixo, -2
+             
+             jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * mistyRigid.gravityScale * jumpHeight);
+             
 
              if (velocity.y > 0f)
              {

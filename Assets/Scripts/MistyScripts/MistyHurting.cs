@@ -38,7 +38,7 @@ public class MistyHurting : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         // layer do espinho
-        if (other.gameObject.layer == 7)
+        if (other.gameObject.layer == 7 || other.gameObject.layer == 8) // floppy e espinho
         {
             ScoreManager.instance.ResetScore();
 
