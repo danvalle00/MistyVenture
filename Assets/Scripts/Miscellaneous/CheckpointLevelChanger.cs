@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class CheckpointLevelChanger : MonoBehaviour
 {
     private MistyHurting hurtScript;
-    public string sceneToLoad = "cena2";
+    public string sceneToLoad = "Fase2";
     void Start()
     {
         hurtScript = GetComponent<MistyHurting>();
