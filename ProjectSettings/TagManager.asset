@@ -20,7 +20,7 @@ TagManager:
   - UI
   - Ground
   - Spike
-  - 
+  - Floppy
   - 
   - 
   - 
@@ -45,6 +45,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Player
+    uniqueID: 2142278991
+    locked: 0
+  - name: Floppy
+    uniqueID: 1956616899
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -38,6 +38,10 @@ public class FloppyMovement : MonoBehaviour
         {
             FloppyScaleInversion();    
         }
+        else if (floppyChecks.GetFloopyFloppy())
+        {
+            FloppyScaleInversion();
+        }
 
     }
 

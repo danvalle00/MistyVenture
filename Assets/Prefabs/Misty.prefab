@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 8420112192981487614}
   - component: {fileID: 7025196556320027421}
   - component: {fileID: 6640788359217121502}
+  - component: {fileID: 147040503344615137}
   m_Layer: 3
   m_Name: Misty
   m_TagString: Player
@@ -39,7 +40,7 @@ Transform:
   m_Children:
   - {fileID: 8926556563280123935}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3078650659318377647
 SpriteRenderer:
@@ -152,7 +153,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.031338155, y: -0.034785986}
+  m_Offset: {x: -0.031338155, y: 0.0008351207}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -163,7 +164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.63438904, y: 0.9442196}
+  m_Size: {x: 0.63438904, y: 0.8729774}
   m_EdgeRadius: 0
 --- !u!95 &3632796104135190318
 Animator:
@@ -199,9 +200,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 8
-  maxAcceleration: 52
-  maxDecceleration: 52
-  maxTurnSpeed: 80
+  maxAcceleration: 80
+  maxDecceleration: 80
+  maxTurnSpeed: 85
   friction: 0
   directionX: 0
   velocity: {x: 0, y: 0}
@@ -217,16 +218,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5086ecb7b6be445a9528931c5ee4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 4
+  jumpHeight: 4.5
   jumpApexTime: 0.5
   upGravityMultiplier: 1
-  downGravityMultiplier: 6
+  downGravityMultiplier: 4
   maxAirJump: 0
   variableJumpHeight: 1
-  jumpCutOff: 6
-  fallSpeedLimit: 10
+  jumpCutOff: 4
+  fallSpeedLimit: 8
   coyoteTime: 0.15
-  jumpBuffer: 0.15
+  jumpBuffer: 0
   onGround: 0
 --- !u!114 &8420112192981487614
 MonoBehaviour:
@@ -268,6 +269,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flagTransform: {fileID: 0}
+--- !u!114 &147040503344615137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876738144810648666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3813b50db1e951a4e92e594d29f9e63a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6283835318805485678
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +346,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.034816146, y: -0.47230673}
+  m_Offset: {x: -0.05037117, y: -0.51586115}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -344,7 +357,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7218635, y: 0.11955309}
+  m_Size: {x: 0.84008217, y: 0.14444137}
   m_EdgeRadius: 0
 --- !u!114 &8732542034868562223
 MonoBehaviour:
